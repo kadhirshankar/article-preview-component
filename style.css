@@ -1,0 +1,131 @@
+/*  BASE STYLES  */
+
+:root {
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+    --white: #ffffff;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    background-color: var(--light-grayish-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /*  CARD CONTAINER  */
+  
+  .card {
+    background-color: var(--white);
+    max-width: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  /*  IMAGE SECTION  */
+  
+  .image {
+    background-image: url('./images/drawers.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+  }
+  
+  /*  CONTENT STYLING  */
+  
+  .content {
+    padding: 1.5rem;
+  }
+  
+  .content h1 {
+    color: var(--very-dark-grayish-blue);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .content p {
+    color: var(--desaturated-dark-blue);
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+  }
+  
+  /*  PROFILE ROW  */
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .info {
+    flex: 1;
+    margin-left: 1rem;
+  }
+  
+  .name {
+    font-weight: 700;
+    color: var(--very-dark-grayish-blue);
+  }
+  
+  .date {
+    color: var(--grayish-blue);
+    font-size: 0.85rem;
+  }
+  
+  /*  SHARE BUTTON  */
+  
+  .share-btn {
+    background-color: var(--light-grayish-blue);
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* SHARE ICONS BOX */
+  
+  .share-icons {
+    background-color: var(--very-dark-grayish-blue);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+  }
+  
+  .share-icons span {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+  }
+  
+  .share-icons img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
